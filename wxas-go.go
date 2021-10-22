@@ -71,6 +71,8 @@ func (t *DirectiveType) UnmarshalJSON(data []byte) error {
 var (
 	// DirectiveNameReply provides the reply directive name
 	DirectiveNameReply = DirectiveName{"reply"}
+	// DirectiveNameLongReply provides the long-reply directive name
+	DirectiveNameLongReply = DirectiveName{"long-reply"}
 	// DirectiveNameSpeak provides the speak directive name
 	DirectiveNameSpeak = DirectiveName{"speak"}
 	// DirectiveNameListen provides the listen directive name
@@ -79,6 +81,10 @@ var (
 	DirectiveNameSleep = DirectiveName{"sleep"}
 	// DirectiveNameUIHint provides the ui-hint directive name
 	DirectiveNameUIHint = DirectiveName{"ui-hint"}
+	// DirectiveNameASRHint provides the asr-hint directive name
+	DirectiveNameASRHint = DirectiveName{"asr-hint"}
+	// DirectiveNameDisplay provides the display directive name
+	DirectiveNameDisplay = DirectiveName{"display"}
 	// DirectiveNameDisplayWebView provides the display-web-view directive name
 	DirectiveNameDisplayWebView = DirectiveName{"display-web-view"}
 	// DirectiveNameClearWebView provides the clear-web-view directive name
