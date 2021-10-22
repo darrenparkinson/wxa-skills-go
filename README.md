@@ -21,7 +21,7 @@ To get started, you will need:
 * [ ] A token with the `assistant` scope to run the skill.  You can temporarily [get this from here](https://3bfnei7xs2.execute-api.us-east-1.amazonaws.com/production/wxa-token) until there is proper tooling;
 
 
-1. Create a folder and download the binaries from the [releases page](github.com/darrenparkinson/wxa-skills-go/releases):  
+1. Create a folder and download the binaries from the [releases page](https://github.com/darrenparkinson/wxa-skills-go/releases):  
     a. `wxa-cli` - for generating the keys and the secret, along with registering your skill;  
     b. `echo-skill-secure` - for the test skill;  
     c. `echo-skill-secure-tester` for testing the skill locally;  
@@ -80,7 +80,7 @@ $ ./echo-skill-secure-tester
 
 ## Binaries
 
-The simplest way is to download the binaries from the [releases page](github.com/darrenparkinson/wxa-skills-go/releases).
+The simplest way is to download the binaries from the [releases page](https://github.com/darrenparkinson/wxa-skills-go/releases).
 
 ## Go Install
 
