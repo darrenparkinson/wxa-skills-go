@@ -1,0 +1,39 @@
+before:
+  hooks:
+    - go mod tidy
+builds:
+  - id: "wxa-cli"
+    main: ./cmd/wxa-cli
+    binary: wxa-cli
+    goos:
+      - darwin
+      - linux
+      - windows
+  - id: "echo-skill"
+    main: ./examples/echo-skill 
+    binary: echo-skill
+    goos:
+      - darwin
+      - linux
+      - windows
+  - id: "echo-skill-secure"
+    main: ./examples/echo-skill-secure
+    binary: echo-skill-secure
+    goos:
+      - darwin
+      - linux
+      - windows
+  - id: "echo-skill-secure-tester"
+    main: ./examples/echo-skill-secure/cmd/echo-skill-secure-tester
+    binary: echo-skill-secure-tester
+    goos:
+      - darwin
+      - linux
+      - windows
+
+archives:
+  - format: binary
+changelog:
+  sort: asc
+checksum:
+  disable: true

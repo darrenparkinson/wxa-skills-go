@@ -76,3 +76,32 @@ $ ./echo-skill-secure-tester
 * Enter the **base64 decoded** organisation ID and the assistant scoped token.  
 * Say or type `ask echo hello there`
 
+# Installation
+
+## Binaries
+
+The simplest way is to download the binaries from the [releases page](github.com/darrenparkinson/wxa-skills-go/releases).
+
+## Go Install
+
+If you have Go installed, you can install using the following commands:
+
+```sh
+$ go install github.com/darrenparkinson/wxa-skills-go/cmd/wxa-cli@latest
+$ go install github.com/darrenparkinson/wxa-skills-go/examples/echo-skill-secure@latest
+$ go install github.com/darrenparkinson/wxa-skills-go/examples/echo-skill-secure/cmd/echo-skill-secure-tester@latest
+```
+
+## Compiling from source
+
+Again, if you have Go installed, you can also compile from source:
+
+```sh
+$ git clone https://github.com/darrenparkinson/wxa-skills-go
+$ cd wxa-skills-go
+$ go mod tidy
+$ go build ./cmd/wxa-cli
+$ go build ./examples/echo-skill-secure
+$ go build ./examples/echo-skill-secure/echo-skill-secure-tester
+$ ./wxa-cli --version
+```

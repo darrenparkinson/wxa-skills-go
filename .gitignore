@@ -1,7 +1,7 @@
 private.pem
 public.pem
 secret.txt
-
+dist/*
 env.sh
 .env
 # Created by https://www.toptal.com/developers/gitignore/api/go,visualstudiocode,vim,windows,macos
