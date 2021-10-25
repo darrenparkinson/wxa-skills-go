@@ -30,6 +30,13 @@ builds:
       - darwin
       - linux
       - windows
+  - id: "basic-lex-skill"
+    main: ./examples/basic-lex-skill
+    binary: basic-lex-skill
+    goos:
+      - darwin
+      - linux
+      - windows
 
 archives:
   - format: binary
