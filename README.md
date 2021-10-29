@@ -15,8 +15,14 @@ You should be famililar with the [Getting Started](https://github.com/cisco/webe
 To get started, you will need:
 
 * [ ] Your tenant enabled for skills;
+
+You will only need the following if you wish to register your skill from the CLI instead of using the [Webex Assistant Skills Developer Portal](https://skills-developer.intelligence.webex.com/):  
+
 * [ ] Your personal access token to register the skill: [get your token here](https://developer.webex.com/docs/api/v1/people/list-people) from the Copy button in the Authorization section;
 * [ ] Your base64 decoded developer ID: [get your ID](https://developer.webex.com/docs/api/v1/people/get-my-own-details) and [base64 decode it here](https://www.base64decode.org/)  taking the last part after `ciscospark://us/PEOPLE/`
+ 
+You will only need the following if you wish to test your skill using the simulator:  
+
 * [ ] Your base64 decoded organisation ID (for the simulator): [get your orgId](https://developer.webex.com/docs/api/v1/people/get-my-own-details) and [base64 decode it here](https://www.base64decode.org/) taking the last part after `ciscospark://us/ORGANIZATION/`
 * [ ] A token with the `assistant` scope to run the skill.  You can temporarily [get this from here](https://3bfnei7xs2.execute-api.us-east-1.amazonaws.com/production/wxa-token) until there is proper tooling;
 
