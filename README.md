@@ -12,6 +12,8 @@ It is currently a work in progress, so expect things to change as more is learne
 
 You should be famililar with the [Getting Started](https://github.com/cisco/webex-assistant-sdk/tree/main/get_started_documentation#create-skill-on-skills-service) documentation. This quickstart assumes you'll be using the simulator to test.
 
+### Quick Start Requirements
+
 To get started, you will need:
 
 * [ ] Your tenant enabled for skills;
@@ -26,6 +28,7 @@ You will only need the following if you wish to test your skill using the simula
 * [ ] Your base64 decoded organisation ID (for the simulator): [get your orgId](https://developer.webex.com/docs/api/v1/people/get-my-own-details) and [base64 decode it here](https://www.base64decode.org/) taking the last part after `ciscospark://us/ORGANIZATION/`
 * [ ] A token with the `assistant` scope to run the skill.  You can temporarily [get this from here](https://3bfnei7xs2.execute-api.us-east-1.amazonaws.com/production/wxa-token) until there is proper tooling;
 
+### Quick Start Steps
 
 1. Create a folder and download the binaries from the [releases page](https://github.com/darrenparkinson/wxa-skills-go/releases):  
     a. `wxa-cli` - for generating the keys and the secret, along with registering your skill;  
