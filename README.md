@@ -2,9 +2,9 @@
 
 [![Status](https://img.shields.io/badge/status-wip-yellow)](https://github.com/darrenparkinson/wxa-skills-go) ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/darrenparkinson/wxa-skills-go) ![GitHub](https://img.shields.io/github/license/darrenparkinson/wxa-skills-go?color=brightgreen) [![GoDoc](https://pkg.go.dev/badge/darrenparkinson/wxa-skills-go)](https://pkg.go.dev/github.com/darrenparkinson/wxa-skills-go) [![Go Report Card](https://goreportcard.com/badge/github.com/darrenparkinson/wxa-skills-go)](https://goreportcard.com/report/github.com/darrenparkinson/wxa-skills-go)
 
-This repository holds example skills and a cli utility written in Go for interacting with Webex Assistant Skills.
+This repository holds example skills and a cli utility written in Go for interacting with Webex Assistant Skills.  For more information on Webex Assistant Skills, please see the official [Webex Assistant Skills Overview](https://developer.webex.com/docs/webex-assistant-skills-overview).
 
-It is intended as an alternative to the official [Webex Assistant SDK](https://github.com/cisco/webex-assistant-sdk) without the need for installing python and the required dependencies.  Simply download the binaries from the releases tab to get started.
+It is intended as an alternative to the official [Webex Assistant SDK](https://github.com/cisco/webex-assistant-sdk), as documented in the [Webex Assistant Skills Guide](https://developer.webex.com/docs/api/guides/webex-assistant-skills-guide), without the need for installing python and the required dependencies.  Simply download the binaries from the releases tab to get started.  
 
 It is currently a work in progress, so expect things to change as more is learned about this new webex feature.
 
@@ -54,6 +54,9 @@ ngrok http 8080
 Use the `https` endpoint provided by ngrok in the next step.
 
 6. Create the Skill on the Skills Service using the details obtained earlier:
+
+You can do this on the [Webex Assistant Skills Developer Portal](https://skills-developer.intelligence.webex.com/) as documented in the [Webex Assistant Skills Guide Developer Portal Guide](https://developer.webex.com/docs/api/guides/webex-assistant-skills-guide-developer-portal-guide) or use the `wxa-cli` command:
+
 ```sh
 $ wxa-cli create-skill --name="Echo" --url="<YOUR_URL_FROM_STEP_5>" --contact="<YOUR_EMAIL>" -secret="$(cat secret.txt)" --public="$(cat public.pem)" --token="<YOUR_PERSONAL_ACCESS_TOKEN>" --developerid="<YOUR_DEVELOPER_ID>"
 ```
