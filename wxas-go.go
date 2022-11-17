@@ -168,7 +168,7 @@ type WebexAssistantDirective struct {
 
 // Payload is the payload for the WebexAssistantDirective
 type Payload struct {
-	Text               *string           `json:"text,omitempty"` // may be []string?
+	Text               interface{}       `json:"text,omitempty"` // may be string or []string for e.g. ui-hints
 	Delay              *int              `json:"delay,omitempty"`
 	Prompt             *string           `json:"prompt,omitempty"`
 	DisplayImmediately *bool             `json:"displayImmediately,omitempty"`
